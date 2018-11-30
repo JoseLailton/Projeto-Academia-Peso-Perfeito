@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="academia.css">
+</head>
+<body>
+
+<div id="a">
+
+<img src="academialogo.jpg" id="imglogo">
+<p id="pa">Academia Peso Perfeito</p>
+<p id="pb"><a href="academiainicial.html">Inicio</a></p>
+<p id="pc"><a href="form.html">Cadastro</a></p>
+
+</div>
+
+ <form action="insert.php" method="POST">
+  <table>
+   <tr>
+    <td>Cadastre-se</td>
+   </tr>
+   <tr>
+    <td>Nome :</td>
+    <td><input type="text" name="nome" required></td>
+   </tr>
+   <tr>
+    <td>Senha :</td>
+    <td><input type="password" name="senha" required></td>
+   </tr>
+   <tr>
+    <td>Sexo :</td>
+    <td>
+     <input type="radio" name="sexo" value="m" required>Masculino
+     <input type="radio" name="sexo" value="f" required>Feminino
+    </td>
+   </tr>
+   <tr>
+    <td>Email :</td>
+    <td><input type="email" name="email" required></td>
+   </tr> 
+   <tr>
+    <td>Rg :</td>
+    <td><input type="text" name="rg" required></td>
+   </tr> 
+   <tr>
+    <td>Telefone :</td>
+    <td>
+     <select name="codigotel" required>
+      <option value="081">081</option>
+     </select>
+     <input type="phone" name="telefone" required>
+    </td>
+   </tr>
+   <tr>
+    <td><input type="submit" value="Enviar"></td>
+   </tr>
+  </table>
+ </form>
+</body>
+</html>
